@@ -431,7 +431,7 @@ height:500px !important;
 </head>
 
 <body class="hold-transition skin-blue sidebar-mini"  onload="get_images(<?php echo $_REQUEST['ref']; ?>, 'service_images');">
-
+<?php include('plugins/startup.php');?>
 <div class="wrapper">
 
 

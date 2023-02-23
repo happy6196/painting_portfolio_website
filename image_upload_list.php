@@ -146,7 +146,7 @@ input:checked + .slider:before {
 </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
-     <?php include('assets/startup.php');?>
+<?php include('plugins/startup.php');?>
 <div class="wrapper">
 
 

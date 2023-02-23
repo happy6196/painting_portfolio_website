@@ -19,7 +19,18 @@ $stmt->execute();
 
 }
 
-
+if($page == 'category' ){
+    
+    if($status=='u')
+    { $stats='p'; }
+    if($status=='p')
+    { $stats='u'; }
+    
+    $update_status="UPDATE category SET status='".$stats."',updated_on=now() where id='".$id."' ";
+    $stmt = $conn->prepare($update_status);
+    $stmt->execute();
+    
+    }
 
 
 
